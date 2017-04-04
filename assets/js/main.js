@@ -6,7 +6,9 @@ function createTooltip() {
 		parent[i].appendChild(span);
 	}
 }
+
 createTooltip();
+
 var submit = 0;
 function soloLetras(indice,nombre) {
 	if(data[indice].value.trim() == "" || data[indice].value == undefined ){
