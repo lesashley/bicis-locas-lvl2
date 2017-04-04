@@ -1,7 +1,18 @@
+function createTooltip() {
+	var parent = document.getElementsByClassName("input-box");
+	for(var i = 0; i < parent.length; i++){
+		var span = document.createElement("span");
+		span.setAttribute("class","error");
+		parent[i].appendChild(span);
+	}
+}
+createTooltip();
+
 var mensaje = document.getElementsByClassName("error");
 
 function validateForm(){
 	var data = document.getElementsByClassName("form-control");
+	//funcion para nombre y apellido
 		function soloLetras(indice,nombre) {
 			if(data[indice].value.trim() == "" || data[indice].value == undefined ){
 				mensaje[indice].style.display="block";
@@ -59,5 +70,4 @@ function validateForm(){
 	else {
 		mensaje[4].style.display = "none";
 	}
-
 }

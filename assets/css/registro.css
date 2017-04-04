@@ -49,8 +49,8 @@
   position: relative;
   height: auto;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 10px;
   font-size: 16px;
 }
@@ -89,6 +89,7 @@
   width: 200px;
   color: white;
   border-radius: 10px;
+  transition: visibility 1 ease;
 }
 
 .input-box span:after {
@@ -103,6 +104,9 @@
   top: 10px;
 }
 
+.input-box span:hover{
+  opacity: 0.8;
+}
 
 .anyerror{
   display: block;
